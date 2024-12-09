@@ -1,0 +1,197 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+  background: rgb(129,33,208);
+  background: linear-gradient(90deg, rgba(129,33,208,1) 0%, rgba(51,28,82,1) 0%, rgba(41,28,58,1) 76%); 
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: white;
+    padding: 10px;
+    border-radius: 100%;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+}
+
+.back-to-top:hover {
+    background-color: #2f71d3;
+}
+header{
+  // border-bottom: 1px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  background: rgb(128,28,210);
+  background: linear-gradient(90deg, rgba(128,28,210,1) 0%, rgba(83,30,134,1) 7%, rgba(51,28,82,1) 27%, rgba(50,28,80,1) 33%, rgba(41,28,58,1) 76%); 
+}
+
+.home{
+ 
+    display: grid;
+    grid-template-columns:30% 70%;
+    grid-template-rows: 75% 25%;
+}
+.stats{
+
+    grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: #2f2142;
+  display: flex;
+
+}
+.profile{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.bio{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+ 
+}
+.bio span{
+    font-family: initial;
+    font-size: x-large;
+}
+.bio p{
+  font-size: 12px;
+  font-family: initial;
+
+}
+.bio img{
+    border-radius: 50%;
+    width: 115px;
+    margin: 10px;
+}
+
+.btn{
+
+  // background: rgba(121, 20, 20, 0.103);
+  // transform: translateX(20%);
+  display: flex;
+  justify-content: revert;
+  align-items: center;
+  margin-bottom: 10px;
+  // border-bottom: 0.5px solid;
+
+}
+.btn i{
+margin-right: 10px;
+width: 100%;
+  height: 100%;
+  margin-left: 50px;
+}
+.navBtn{
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: inherit;
+  font-size: large;
+  margin-top: 20px;
+}
+.card {
+    background-color: #888888ad;
+   
+    margin: 5%;
+ 
+
+  flex-direction: column;
+
+
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
+.gradient-border {
+  --border-width: 1px;
+
+  position: relative;
+ 
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 90%;
+  font-family: "Font Awesome 6 Free";
+
+  text-transform: uppercase;
+  color: white;
+  background: #291c3a;
+  border-radius: 10px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(83,30,134,1) 48%, rgba(51,28,82,1) 75%, rgba(50,28,80,1) 84%, rgba(41,28,58,1) 90%, rgba(41,28,58,1) 100%);    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 10px;
+    animation: moveGradient 4s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.btn :hover {
+  color: #0fffc1;
+  cursor: pointer;
+}
+
+/* Underline Animation */
+.btn::after {
+  content: '';
+  position: absolute;
+ margin-top: 30px;
+
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0fffc1;
+  transition: width 0.3s ease;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.box{
+  padding-left: 50px;
+  color: white;
+  // width: 250px;
+  height: 120px;
+  // background-color: rgb(90, 92, 94);
+  border-radius:15px ;
+  display: flex;
+  align-items: center;
+}
+.box big{
+  font-size: 76px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+.box span{
+  font-size: 30px;
+  font-family: "Courier New";
+  margin-left: 10px;
+  line-height: 1;
+}
+.box img{
+  width: 70px;
+}
+.textInfo img{
+  height: 100%;
+  margin: 15px;
+}

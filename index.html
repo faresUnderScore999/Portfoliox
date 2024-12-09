@@ -5,49 +5,69 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./assets/css/styles.scss" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
 	<title>Portfoliox</title>
 	<script src="https://unpkg.com/htmx.org@1.8.4"></script>
+	<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  rel="stylesheet"
+/>
+
 </head>
-<style>
-	html {
-		scroll-behavior: smooth;
-	}
 
-	.back-to-top {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		background-color: #ff3b30;
-		color: white;
-		padding: 10px;
-		border-radius: 100%;
-		display: none;
-		cursor: pointer;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		font-size: 18px;
-		height: 50px;
-		width: 50px;
-	}
-
-	.back-to-top:hover {
-		background-color: #d32f2f;
-	}
-</style>
 
 <body class="bg-black min-h-screen">
 	<header class="w-full text-white p-5 flex justify-between items-center sticky">
-		<h1 class="text-red-400">Med Aziz Gharbi</h1>
-		<nav class="w-1/4 ">
+		<h1 class=""><big style="font-size: xx-large;">ELBOSS</big></h1>
+		<nav class="w-1/4 navigation">
 			<ul class="flex justify-around">
-				<li class="hover:text-red-400 cursor-pointer"><a href="#home">Home</a></li>
-				<li class="hover:text-red-400 cursor-pointer"><a href="#about">About</a></li>
-				<li class="hover:text-red-400 cursor-pointer"><a href="#contact">Contact</a></li>
+				<li class="hover:text-red-400 cursor-pointer"><a href="https://github.com/MedAzizGharbi"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+				<li class="hover:text-red-400 cursor-pointer"><a href="https://github.com/MedAzizGharbi"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+				<li class="hover:text-red-400 cursor-pointer"><a href="https://github.com/MedAzizGharbi"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
 			</ul>
 		</nav>
 	</header>
-	<section id="home" class="h-screen bg-blue-400">
-		<h2 class="text-center text-white">Home Section</h2>
+	<section id="home" class="h-screen home">
+		<!-- <h2 class="text-center text-white">Home Section</h2> -->
+
+		<div class="profile">
+			<div class="card gradient-border">
+				<div class="bio">
+					<img src="https://media.licdn.com/dms/image/v2/D4D35AQEZOe1j9UokMg/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1657657483173?e=1734375600&v=beta&t=zeVzF2Wwsi2x8fbOLnH0FV4AYQlG_fiXVlzpfko89xU" alt="description" />
+					<div>
+					<span> Med aziz</span>
+					<p>Software Engineering Student | UI/UX Developer
+						Ezzahra, Gouvernorat Ben Arous, Tunisie</p>
+					</div>
+				</div>
+				<div class="navBtn">
+					<div><a href="#home" class="btn"><i class="fa-solid fa-house">  &nbsp;&nbsp;  HOME</i></a></div>
+					<div><a href="#about" class="btn"><i class="fa-solid fa-folder">  &nbsp;&nbsp;  PROJECT</i></a> </div>
+					<div><a href="#about" class="btn"><i class="fa-regular fa-address-card">  &nbsp;&nbsp;  ABOUT</i></a></div>
+					<div><a href="#contact" class="btn"><i class="fa-solid fa-phone">  &nbsp;&nbsp;  CONTACT</i></a></div>
+
+				</div>
+				
+				
+			</div>
+		</div>
+		<div class="textInfo"> 
+			<div style="display: flex;justify-content: center;">	<img src="./assets/img/changeMEE.png" alt="description" /></div>
+		</div>
+		<div class="stats">
+			<div class="box"><big>3</big><span>YEARS OF <br> EXPERIENCE</span> </div>
+			<div class="box"><big>12</big><span>PROJECT COMPLETED <br> AROUND THE WORLD</span> </div>
+			<div class="box">	<img src="./assets/img/tec3.png" alt="description" /></div>
+			<div class="box">	<img src="./assets/img/tec4.png" alt="description" /></div>
+			<div class="box">	<img src="./assets/img/tec5.png" alt="description" /></div>
+			<div class="box">	<img src="./assets/img/tec6.png" alt="description" /></div>
+			<div class="box">	<img src="./assets/img/tec1.png" alt="description" /></div>
+			<div class="box">	<img src="./assets/img/tec2.png" alt="description" /></div>
+		</div>
+
+
+
 	</section>
 	<section id="about" class="h-screen bg-green-400">
 		<h2 class="text-center text-white">About Section</h2>
@@ -71,7 +91,7 @@
 
 		// Scroll to the top when the button is clicked
 		backToTopButton.onclick = function () {
-			window.scrollTo({top: 0, behavior: 'smooth'});
+			window.scrollTo({ top: 0, behavior: 'smooth' });
 		};
 	</script>
 </body>
