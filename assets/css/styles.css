@@ -26,7 +26,7 @@ body{
     background-color: #2f71d3;
 }
 header{
-  // border-bottom: 1px solid white;
+  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   background: rgb(128,28,210);
   background: linear-gradient(90deg, rgba(128,28,210,1) 0%, rgba(83,30,134,1) 7%, rgba(51,28,82,1) 27%, rgba(50,28,80,1) 33%, rgba(41,28,58,1) 76%); 
@@ -74,13 +74,12 @@ header{
 
 .btn{
 
-  // background: rgba(121, 20, 20, 0.103);
-  // transform: translateX(20%);
+
   display: flex;
   justify-content: revert;
   align-items: center;
   margin-bottom: 10px;
-  // border-bottom: 0.5px solid;
+
 
 }
 .btn i{
@@ -171,9 +170,9 @@ width: 100%;
 .box{
   padding-left: 50px;
   color: white;
-  // width: 250px;
+
   height: 120px;
-  // background-color: rgb(90, 92, 94);
+
   border-radius:15px ;
   display: flex;
   align-items: center;
